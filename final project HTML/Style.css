@@ -1,0 +1,1031 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&family=Roboto:ital,wght@1,300&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    top: 0px;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: x-large;
+    font-weight: 800;
+    color: #000;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 900;
+    color: #000;
+}
+
+h3 {
+    font-size: 10px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.473);
+}
+
+p {
+    font-size: 17px;
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.644);
+}
+
+#head.header {
+    background-image: url(./banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    width: 100%;
+    height: 38rem;
+    padding-top: 40px;
+
+}
+
+/*#head.header{
+    a
+}*/
+
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+}
+
+.navbar img {
+    width: 10rem;
+    height: 5rem;
+    padding-left: 40px;
+    padding-top: 10px;
+}
+
+.navbar nav ul {
+    display: flex;
+    list-style: none;
+    padding: 40px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    margin-left: 15px;
+    color: white;
+    transition: 0.3s ease-in;
+    position: relative;
+}
+
+nav li a.active::after,
+nav li a:hover:after {
+    content: "";
+    width: 80%;
+    height: 0.2rem;
+    background: rgb(28, 2, 255);
+    bottom: -8px;
+    left: 0px;
+    position: absolute;
+}
+
+.titre {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+}
+
+.titre p {
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+}
+
+.titre h2 {
+
+    font-weight: 900;
+    font-size: 50px;
+    color: white;
+
+}
+
+.titre a button {
+    background-color: transparent;
+    border: 3px solid rgba(23, 7, 255, 0.479);
+    width: 8rem;
+    height: 2rem;
+    color: white;
+    font-weight: 700;
+    transition: 0.3s ease-in;
+}
+
+.titre a button:hover {
+    color: rgb(79, 79, 231);
+    cursor: pointer;
+    font-weight: bold;
+    width: 8.5rem;
+    height: 2.5rem;
+
+}
+
+#course.offered-course .text {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 40px;
+
+}
+
+#course.offered-course .small {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 80px;
+    margin: 30px;
+}
+
+#course.offered-course .small-text {
+    text-align: center;
+    align-items: center;
+    width: 27%;
+    background-color: antiquewhite;
+    background-size: 10rem;
+    padding: 10px;
+}
+
+#Global.offered-course .Glo-text {
+
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 40px;
+
+}
+
+#Global.offered-course .image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#Global.offered-course .small-image {
+    padding-bottom: 80px;
+    margin: 15px;
+    position: relative;
+    text-align: center;
+
+}
+
+#Global.offered-course .small-image img {
+    width: 100%;
+    height: 25rem;
+    border-radius: 10px;
+    transition: 0.3s ease-in;
+    position: relative;
+}
+
+#Global.offered-course .small-image img::after {
+    pointer-events: none;
+
+    background: rgb(226, 0, 0, 0.7);
+}
+#Global.offered-course .image .small-image h1{
+    display: none;
+    transition: 0.3s ease-in-out;
+}
+#Global.offered-course .image .small-image:hover h1{
+    color: antiquewhite;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top:41.2%;
+    left: 50%;
+    border-radius: 10px;
+    position: absolute;
+    background-color:  rgb(226, 0, 0, 0.7);
+    height: 25rem;
+    width: 100%;
+    transform: translate(-50%,-50%);
+
+}
+
+#Facilities.offered-course {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 40px;
+    width: 100%;
+}
+
+#Facilities.offered-course .faci-text {
+    padding-bottom: 60px;
+}
+
+#Facilities.offered-course .picture {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#Facilities.offered-course .small-picture {
+    padding-bottom: 80px;
+    margin: 10px;
+    position: relative;
+
+}
+
+#Facilities.offered-course .small-picture img {
+    width: 100%;
+    height: 25rem;
+    border-radius: 10px;
+
+}
+
+#Reviews.offered-course .Students-say {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 40px;
+
+}
+
+#Reviews.offered-course .all-reviews .stu-reviews img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+#Reviews.offered-course .all-reviews .stu-reviews {
+    background: wheat;
+    margin: 30px;
+    width: 35%;
+    padding: 20px;
+}
+
+#Reviews.offered-course .Students-say h2 {
+    font-size: 30px;
+}
+
+#Reviews.offered-course .all-reviews {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#Reviews.offered-course .all-reviews .stu-reviews .stars a {
+    color: orange;
+}
+
+#Contact-page.offered-course {
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+#Contact-page.offered-course img {
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    border-radius: 10px;
+}
+
+#Contact-page.offered-course .contact {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+#Contact-page.offered-course .contact h2 {
+    font-size: 27px;
+    color: aliceblue;
+
+}
+
+#Contact-page.offered-course .contact a button {
+    color: aliceblue;
+    margin-top: 20px;
+    border: 2px solid rgba(0, 195, 255, 0.466);
+    padding: 5px;
+    background-color: rgba(52, 136, 209, 0.925);
+    transition: 0.3s ease-in-out;
+}
+
+#Contact-page.offered-course .contact a button:hover {
+    color: rgb(15, 43, 202);
+    cursor: pointer;
+    width: 7rem;
+    height: 2rem;
+}
+
+#Footer.offered-course {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#Footer.offered-course p {
+    padding-top: 20px;
+    width: 50%;
+    padding-left: 25%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+#Footer.offered-course .social a i {
+    width: 3rem;
+    height: 3rem;
+    color: orange;
+    transition: 0.3s ease-out;
+}
+
+#Footer.offered-course .social a i:hover {
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+
+}
+
+#mobile {
+    display: flex;
+}
+
+#mobile .H-M {
+    display: none;
+}
+
+/**********************About  US page***************/
+#head.About-header {
+    background: url(./background.jpg);
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+#head.About-header .About-titre {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+}
+
+.About-titre h2 {
+    font-size: 40px;
+    color: white;
+}
+
+#About-information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+}
+
+#About-information .Aboutdiv1 {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin: 30px;
+}
+
+#About-information .Aboutdiv1 h2 {
+    padding-bottom: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+}
+
+#About-information .Aboutdiv1 button {
+    padding: 4px;
+    margin: 40px;
+    background-color: transparent;
+    border: 3px solid rgba(23, 7, 255, 0.479);
+    width: 8rem;
+    height: 2rem;
+    color: rgb(23, 16, 121);
+    font-weight: 700;
+    transition: 0.3s ease-in;
+}
+
+#About-information .Aboutdiv1 button:hover {
+    cursor: pointer;
+    width: 8.5rem;
+    height: 2.5rem;
+}
+
+#About-information .Aboutdiv2 {
+    width: 40%;
+}
+
+#About-information .Aboutdiv2 img {
+    right: 0px;
+    width: 100%;
+    height: 18rem;
+    margin: 30px;
+}
+
+/***********Course page**************/
+#head.Course-header {
+    background: url(./background.jpg);
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#head.Course-header .course-titre {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+}
+
+.course-titre h2 {
+    font-size: 40px;
+    color: white;
+}
+
+/**************** Blog page ****************/
+#head.Blog-header {
+    background: url(./background.jpg);
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#head.Blog-header .Blog-titre {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+}
+
+.Blog-titre h2 {
+    font-size: 40px;
+    color: white;
+}
+
+/***************Blog page******************/
+#Certificate.offered-course {
+    display: flex;
+    padding-top: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+#Certificate.offered-course .image {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin: 20px;
+
+}
+
+#Certificate.offered-course .image img {
+    width: 100%;
+    height: 18rem;
+}
+
+#Certificate.offered-course .Categories {
+    width: 35%;
+    padding-top: 20px;
+}
+
+.Categories .head-board {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(233, 48, 48, 0.801);
+    color: white;
+    margin-bottom: 40px;
+}
+
+#Certificate.offered-course .Categories table {
+    width: 100%;
+}
+
+#Certificate.offered-course .Categories table thead tr td {
+    padding-bottom: 10px;
+}
+
+#Description.offered-course {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 40px;
+    padding-bottom: 150px;
+}
+
+#Description.offered-course p {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    width: 80%;
+}
+
+#Description.offered-course .table {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    border: 1px solid rgba(0, 0, 0, 0.473);
+    padding: 40px;
+    transition: 0.3s ease-in-out;
+}
+
+#Description.offered-course .table:hover {
+    border-top: none;
+    border-bottom: none;
+    cursor: pointer;
+}
+
+#Description.offered-course .table span {
+    padding-bottom: 30px;
+
+}
+
+#Description.offered-course .table input {
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+
+#Description.offered-course .table input:nth-child(4) {
+    padding-bottom: 50px;
+}
+
+
+#Description.offered-course a button {
+    padding: 5px;
+    background-color: rgba(233, 48, 48, 0.801);
+    border: none;
+    color: white;
+    margin-top: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+#Description.offered-course a button:hover {
+    width: 8rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+
+/****************** Contact-page*************/
+#head.Contact-header {
+    background: url(./background.jpg);
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#head.Contact-header .Contact-titre {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+}
+
+#head.Contact-header .Contact-titre h2 {
+    font-size: 40px;
+    color: white;
+
+}
+
+#Map.Google-map {
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.G-map {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+}
+
+#Map.Google-map .G-map a iframe {
+    width: 80%;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+#Map.Google-map .info {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+#Map.Google-map .info .contact {
+    width: 40%;
+}
+
+#Map.Google-map .info .contact .small {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+
+#Map.Google-map .info .contact .small .smallest {
+    display: flex;
+    flex-direction: row;
+}
+
+i {
+    color: rgba(248, 141, 0, 0.952);
+}
+
+#Map.Google-map .info table {
+    width: 100%;
+}
+
+#Map.Google-map .info table thead tr td {
+    padding-bottom: 10px;
+}
+
+#Map.Google-map .info .table {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    border: 1px solid rgba(0, 0, 0, 0.473);
+    padding: 40px;
+    transition: 0.3s ease-in-out;
+}
+
+
+#Map.Google-map .info .table span {
+    padding-bottom: 30px;
+}
+
+#Map.Google-map .info .table input {
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+
+#Map.Google-map .info .table input:nth-child(4) {
+    padding-bottom: 50px;
+}
+
+#Map.Google-map .info a button {
+    padding: 5px;
+    background-color: rgba(255, 137, 2, 0.959);
+    border: none;
+    color: white;
+    margin-top: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+#Map.Google-map .info a button:hover {
+    width: 8rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+#Map.Google-map .info {
+
+    display: flex;
+    justify-content: center;
+    margin: 015px;
+}
+
+#Map.Google-map .info .table {
+    display: flex;
+    width: 40%;
+    border: 1px solid rgba(0, 0, 0, 0.473);
+    padding: 35px;
+    transition: 0.3s ease-in-out;
+    margin-bottom: 100px;
+}
+
+/************ About page *******/
+
+#About-information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow-x: hidden;
+}
+#head.About-header {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+/************ Blog page *************/
+.Blog-titre h2 {
+    font-size: 35px;
+    color: white;
+}
+
+
+@media (max-width:799px) {
+    #mobile {
+        display: flex;
+        width: 25%;
+        height: 5rem;
+        display: block;
+        border: none;
+        margin: 20px;
+        top: 50px;
+        left: 50px;
+    }
+
+    .navbar nav ul {
+        display: inline;
+        list-style: none;
+        margin: 5px;
+    }
+
+    .navbar nav ul a li {
+
+        margin: 15px;
+    }
+#mobile .H-M{
+    display: flex;
+    margin-top: 20px;
+    margin-right: 30px;
+    justify-content: center;
+}
+
+
+#mobile .H-M  i {
+    color: whitesmoke;
+    font-size: 3rem;
+}
+#mobile .H-M  i#barssClose{
+
+    font-size: 1.5rem;
+    color: black;
+}
+#mobile .H-M  i.hide{
+    display: none;
+}
+
+nav ul#list li a{
+    color: black;
+}
+
+nav ul#list.hide{
+    display: none;
+}
+
+
+nav ul#list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    margin-top: -2rem;
+    font-size: .75rem;
+    width: 20%;
+    background-color: aliceblue;
+}
+
+}
+
+
+
+@media (max-width:499px) {
+
+    #course.offered-course .small {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 80px;
+    }
+
+    p {
+        width: 80%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #head.header {
+        background-image: url(./banner.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: cover;
+        width: 100%;
+        height: 38rem;
+        padding-top: 40px;
+    }
+
+    #course.offered-course .small-text {
+        text-align: center;
+        align-items: center;
+        width: 80%;
+        background-color: antiquewhite;
+        background-size: 5rem;
+        padding-top: 20px;
+        margin: 15px;
+    }
+
+    #course.offered-course .small-text p {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+    }
+
+    #Global.offered-course .image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+    }
+
+
+    
+
+    #Facilities.offered-course .picture {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #Facilities.offered-course p {
+        margin-left: 40px;
+    }
+
+    #Facilities.offered-course .small-picture img {
+        width: 80%;
+    }
+
+    #Contact-page.offered-course img {
+        width: 100%;
+
+    }
+
+    #Contact-page.offered-course .contact h2 {
+        font-size: 20px;
+        color: aliceblue;
+    }
+
+    /************About page *******/
+
+    #About-information {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    #About-information .Aboutdiv2 {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #About-information .Aboutdiv2 img {
+        right: 0px;
+        width: 80%;
+        height: 18rem;
+
+    }
+
+    #About-information .Aboutdiv1 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    /************Blog page*************/
+
+    #Certificate.offered-course {
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+        padding-bottom: 100px;
+        overflow-x: hidden;
+    }
+
+    #Certificate.offered-course .image {
+        width: 100%;
+    }
+
+    #Certificate.offered-course .image img {
+        width: 100%;
+        height: 18rem;
+    }
+
+    #Certificate.offered-course .Categories {
+        width: 80%;
+        padding-top: 20px;
+    }
+
+    #Description.offered-course h2 {
+        font-size: 24px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        font-weight: 900;
+        color: #000;
+        width: 80%;
+    }
+
+    #Description.offered-course p {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        width: 80%;
+    }
+
+    #Description.offered-course {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        padding-bottom: 150px;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    #Description.offered-course .table {
+        width: 60%;
+    }
+
+    /************Contact page*****/
+    #Map.Google-map .info {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #Map.Google-map .info .contact {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    #Map.Google-map .info .contact .small{
+        justify-content: center;
+        align-items: center; 
+        width: 100%;
+    }
+
+}
